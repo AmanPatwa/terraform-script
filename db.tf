@@ -2,7 +2,7 @@ module "db" {
   source  = "terraform-aws-modules/rds/aws"
 #   version = "~> 3.0"
 
-  identifier = "group3-mysql-db"
+  identifier = "group3-mysql-db-1"
 
   engine            = "mysql"
   engine_version    = "8.0.23"
@@ -58,5 +58,7 @@ module "db" {
 #     }
 #   ]
 
-  
+  depends_on = [
+    module.vpc
+  ]
 }

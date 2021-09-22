@@ -5,7 +5,7 @@ resource "aws_launch_template" "foo" {
     name = "PE-Training-2021"
   }
 
-  image_id = "ami-08dbf16d54b8c4173"
+  image_id = "ami-0ac95c97a63c735d1"
 
   instance_type = "t2.micro"
 
@@ -46,8 +46,8 @@ resource "aws_launch_template" "foo" {
 #       Name = "test"
 #     }
 #   }
-
-  user_data = "IyEvYmluL2Jhc2hcbnN1ZG8gYXB0IHVwZGF0ZVxuY2QgL2hvbWUvdWJ1bnR1L0V4YW0tUG9ydGFsL1xuc291cmNlIC9ob21lL3VidW50dS9FeGFtLVBvcnRhbC9kZXZlbnYvYmluL2FjdGl2YXRlXG5jZCAvaG9tZS91YnVudHUvRXhhbS1Qb3J0YWwvRXhhbS9cbnB5dGhvbiBtYW5hZ2UucHkgbWFrZW1pZ3JhdGlvbnNcbnB5dGhvbiBtYW5hZ2UucHkgbWlncmF0ZVxucHl0aG9uIG1hbmFnZS5weSBydW5zZXJ2ZXIgMC4wLjAuMDo4MDAw"
+  user_data = "IyEvYmluL2Jhc2gKc3VkbyBhcHQgdXBkYXRlCmNkIC9ob21lL3VidW50dS9FeGFtLVBvcnRhbC8Kc291cmNlIC9ob21lL3VidW50dS9FeGFtLVBvcnRhbC9kZXZlbnYvYmluL2FjdGl2YXRlCmNkIC9ob21lL3VidW50dS9FeGFtLVBvcnRhbC9FeGFtLwpweXRob24gbWFuYWdlLnB5IG1ha2VtaWdyYXRpb25zCnB5dGhvbiBtYW5hZ2UucHkgbWlncmF0ZQpweXRob24gbWFuYWdlLnB5IHJ1bnNlcnZlciAwLjAuMC4wOjgwMDA="
+#   user_data = "IyEvYmluL2Jhc2hcbnN1ZG8gYXB0IHVwZGF0ZVxuY2QgL2hvbWUvdWJ1bnR1L0V4YW0tUG9ydGFsL1xuc291cmNlIC9ob21lL3VidW50dS9FeGFtLVBvcnRhbC9kZXZlbnYvYmluL2FjdGl2YXRlXG5jZCAvaG9tZS91YnVudHUvRXhhbS1Qb3J0YWwvRXhhbS9cbnB5dGhvbiBtYW5hZ2UucHkgbWFrZW1pZ3JhdGlvbnNcbnB5dGhvbiBtYW5hZ2UucHkgbWlncmF0ZVxucHl0aG9uIG1hbmFnZS5weSBydW5zZXJ2ZXIgMC4wLjAuMDo4MDAw"
 }
 
 # resource "aws_autoscaling_group" "bar" {

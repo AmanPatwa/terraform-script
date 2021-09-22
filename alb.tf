@@ -2,7 +2,7 @@ module "alb" {
   source  = "terraform-aws-modules/alb/aws"
 #   version = "~> 6.0"
 
-  name = "group3-alb"
+  name = "group3-alb-1"
 
   load_balancer_type = "application"
 
@@ -55,6 +55,7 @@ module "alb" {
   }
 
   depends_on = [
-    module.vpc
+    module.vpc,
+    module.db
   ]
 }
