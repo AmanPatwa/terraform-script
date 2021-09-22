@@ -8,7 +8,8 @@ module "lambda_function" {
   create_layer    = false  # to control creation of the Lambda Layer and related resources
   create_role     = false 
   lambda_role = "arn:aws:iam::488599217855:role/PE-Training-2021"
-
+  timeout = 300
+  memory_size = 1024
   source_path = "./lambda.py"
 
   tags = {
