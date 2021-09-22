@@ -109,7 +109,7 @@ resource "aws_autoscaling_policy" "Group3-cpu_high" {
 }
 # Scaling DOWN - CPU Low
 resource "aws_autoscaling_policy" "Group3-cpu_low" {
-  name                   = "group3-cpu-high"
+  name                   = "group3-cpu-low"
   autoscaling_group_name = aws_autoscaling_group.Group3-asg.name
   adjustment_type        = "ChangeInCapacity"
   policy_type            = "SimpleScaling"
